@@ -4,17 +4,16 @@ class Openvdb < Formula
   # Check whether this can be switched to `openexr`, `imath`, and `tbb` at version bump
   # https://github.com/AcademySoftwareFoundation/openvdb/issues/1034
   # https://github.com/AcademySoftwareFoundation/openvdb/issues/932
-  url "https://github.com/AcademySoftwareFoundation/openvdb/archive/v8.0.1.tar.gz"
-  sha256 "a6845da7c604d2c72e4141c898930ac8a2375521e535f696c2cd92bebbe43c4f"
+  url "https://github.com/AcademySoftwareFoundation/openvdb/archive/v8.1.0.tar.gz"
+  sha256 "3e09d47331429be7409a3a3c27fdd3c297f96d31d2153febe194e664a99d6183"
   license "MPL-2.0"
-  revision 2
   head "https://github.com/AcademySoftwareFoundation/openvdb.git"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "ed36d4355a32b8747fa97a9daffad31291a17738cab0d8b238b1ff3b2e651d3c"
-    sha256 cellar: :any, big_sur:       "e40f84714feb845bcc67b693ba709aa23e5fd2a12ae77a4e7e39bf5a16ca8329"
-    sha256 cellar: :any, catalina:      "2a9d6a3246e04b72f5a39e19a4be80351b50ec1161032a2ac4d9ab4898839967"
-    sha256 cellar: :any, mojave:        "68f97f2661f7042b36f208437061cb8a9c0d4c3b2c39ecc0a82351a5a59e231e"
+    sha256 cellar: :any, arm64_big_sur: "3b009e6f335c6dd6264c391ede13d7dcda7731851f8e6bb8d7f1395d1baa1338"
+    sha256 cellar: :any, big_sur:       "09b92c96f974aa12123a31b92c5cda3fec0678d6491c5e9895d7cdd8dbfdde50"
+    sha256 cellar: :any, catalina:      "55ec23082cdec8e584dbacc3b566430a6d83f847b7fbaf58fcc817e05194b255"
+    sha256 cellar: :any, mojave:        "2a82056566ede58322204b6881cd00600b210d8fd9a781fc46499a39d254830a"
   end
 
   depends_on "cmake" => :build
